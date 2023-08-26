@@ -20,19 +20,19 @@
             
             <ul class="nav-list">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
+                    <a href="#about" class="nav-link">About</a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Experience</a>
+                    <a href="#experience" class="nav-link">Experience</a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Projects</a>
+                    <a href="#project" class="nav-link">Projects</a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -52,19 +52,19 @@
 
                 <div class="menu-list">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">About</a>
+                        <a href="#about" class="nav-link">About</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Experience</a>
+                        <a href="#experience" class="nav-link">Experience</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Projects</a>
+                        <a href="#project" class="nav-link">Projects</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
+                        <a href="#contact" class="nav-link">Contact</a>
                     </li>
                 </div>
         </div>
@@ -72,7 +72,7 @@
         </nav>
 
     <!-------------------------- Hero Section --------------------------------------->
-        <section class="hero">
+        <section class="hero" >
 
             <div class="sub-section1">
                 <div class="hero-img">
@@ -103,7 +103,7 @@
 
 
     <!--------------------------------------------------------2.About Me --------------------------------------------------------------------->
-    <section class="About-me">
+    <section class="About-me" id="about">
         <div class="about-Title">
             <p>Get To Know More</p>
             <h1 class="about-me-title">About Me</h1>
@@ -122,11 +122,18 @@
                 <img src="./assets/project-3.png" alt="" class="img2">
             </div>
         </div>
+   
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
     </section>
 
 
     <!--------------------------------------------------------3.Experience --------------------------------------------------------------------->
-    <section class="experience">
+    <section class="experience" id="experience">
         <div class="about-Title">
             <p>Explore My</p>
             <h1 class="about-me-title experience">Experience</h1>
@@ -284,10 +291,17 @@
                 
             </div>
         </div>
+        
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#project'"
+      />
     </section>
 
     <!--------------------------------------------------------4.Projects --------------------------------------------------------------------->
-    <section class="projects">
+    <section class="projects" id="project" itemref="">
         <div class="about-Title">
             <p>Browse My Recent</p>
             <h1 class="about-me-title project">Projects</h1>
@@ -339,13 +353,51 @@
             </div>
         </div>
 
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+
     </section>
 
     <!--------------------------------------------------------5.Contact Me --------------------------------------------------------------------->
-    <footer class="contact-me">
+    <section class="Contact-Me" id="contact">
+        
+            <div class="about-Title">
+                <p class="Talk">Let's talk</p>
+                <h1 class="about-me-title contact-me">Contact Me</h1>
+            </div>
 
-    </footer>
+            <div class="contact-us-container">
+                <div class="contact-us-box">
+                    <div class="input">
+                        <label for="name">Name</label>
+                        <input type="text" value="" class="Contact-input" placeholder="Enter your Name">
+                    </div>
+    
+                    <div class="input">
+                    <label for="email">Email</label>
+                    <input type="email" value="" class="Contact-input" placeholder="Enter your Email">
+                    </div>
 
+                    <div class="input">
+                    <label for="name">Comment</label>
+                    <textarea value="" class="Contact-input comment" placeholder="Enter your comments"></textarea>
+                    </div>
+
+
+                    <button class="btn btn1 submit">Submit</button>
+                </div>
+            </div>
+
+        </section>
+        <footer class="contact_me">
+            <div class="copyright">
+               Copyright &copy; 2023 BH Portfolio. All Rights Reserved.
+            </div>
+        </footer>
     <script src="script.js"></script>
 </body>
 </html>
