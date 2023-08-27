@@ -282,8 +282,8 @@ section{
 }
 
 .img1{
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     border-radius: 1rem;
 }
 
@@ -473,4 +473,12 @@ section{
     position: absolute;
     right: -5rem;
     bottom: 2.5rem;
+}
+
+.message.error{
+    color: red;
+}
+
+.message.success{
+    color: green;
 }

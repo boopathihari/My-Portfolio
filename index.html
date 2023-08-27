@@ -76,7 +76,7 @@
 
             <div class="sub-section1">
                 <div class="hero-img">
-                    <img src="./assets/profile-pic.png" alt="Boopathi Hari profile pic"/>
+                    <img src="./assets/profile/final.png" alt="Boopathi Hari profile pic"/>
                 </div>
             </div>
 
@@ -112,7 +112,7 @@
         <div class="about-container">
             <div class="about-left">
                 <div class="img-container">
-                    <img src="./assets//about-pic.png" alt="" class="img1">
+                    <img src="./assets/profile/final2.png" alt="" class="img1">
                 </div>
                 <div class="about-me-Text">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, itaque dolorem. Officiis repellat architecto deleniti in animi, aspernatur dolorem quidem quia. Ipsum, quod commodi perspiciatis, possimus porro labore et rem assumenda consectetur delectus eligendi quis dicta illum deleniti</p>
@@ -363,41 +363,44 @@
     </section>
 
     <!--------------------------------------------------------5.Contact Me --------------------------------------------------------------------->
-    <section class="Contact-Me" id="contact">
-        
-            <div class="about-Title">
-                <p class="Talk">Let's talk</p>
-                <h1 class="about-me-title contact-me">Contact Me</h1>
-            </div>
+    <section class="Contact-Me" id="contact" style="height: 100%;">
+        <div class="about-Title">
+            <p class="Talk">Let's talk</p>
+            <h1 class="about-me-title contact-me">Contact Me</h1>
+        </div>
 
-            <div class="contact-us-container">
-                <div class="contact-us-box">
+        <div class="contact-us-container">
+            <div class="contact-us-box">
+                <form id="contact-form">
+        <div class="message" style="display: none;margin-bottom: 4px;"></div> <!-- Add a message container -->
+
                     <div class="input">
                         <label for="name">Name</label>
-                        <input type="text" value="" class="Contact-input" placeholder="Enter your Name">
+                        <input type="text" id="name" class="Contact-input" placeholder="Enter your Name">
                     </div>
     
                     <div class="input">
-                    <label for="email">Email</label>
-                    <input type="email" value="" class="Contact-input" placeholder="Enter your Email">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="Contact-input" placeholder="Enter your Email">
                     </div>
 
                     <div class="input">
-                    <label for="name">Comment</label>
-                    <textarea value="" class="Contact-input comment" placeholder="Enter your comments"></textarea>
+                        <label for="comment">Comment</label>
+                        <textarea id="comment" class="Contact-input comment" placeholder="Enter your comments"></textarea>
                     </div>
 
 
-                    <button class="btn btn1 submit">Submit</button>
-                </div>
+                    <button type="submit" class="btn btn1 submit" >Submit</button>
+                </form>
             </div>
-
-        </section>
+        </div>
+    </section>
         <footer class="contact_me">
             <div class="copyright">
                Copyright &copy; 2023 BH Portfolio. All Rights Reserved.
             </div>
         </footer>
-    <script src="script.js"></script>
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script src="script.js"></script>
 </body>
 </html>
